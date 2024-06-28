@@ -1,0 +1,154 @@
+:root {
+    --primary-color: #02FF67;
+    --secondy-color: #ddd9d9;
+    --third-color: #1C1B33;
+    --fourth-color: #1F1615;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    z-index: 996;
+}
+
+header .logo img {
+    width: 130px;
+    margin-top: 10px;
+}
+
+.menu-icon {
+    font-size: 32px;
+    cursor: pointer;
+    color: var(--secondy-color);
+}
+
+.menu-icon.active {
+    color: var(--fourth-color);
+    display: none;
+}
+
+.menu {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    background-color: var(--fourth-color);
+    z-index: 998;
+}
+
+.menu ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+    width: 50%;
+    font-family: 'Rubik';
+}
+
+.menu ul li {
+    margin: 20px 0;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 52px;
+    color: white;
+    transition: color .3s ease-in-out, box-shadow .5s ease-in-out;
+    padding: 10px;
+    background-size: 200% 100%;
+    background-image: linear-gradient(to right, var(--primary-color) 50%, transparent 50%);
+    background-position: 100% 0;
+}
+
+.menu ul li a:hover {
+    background-position: 0 0;
+    color: white;
+    transition: background-position .3s ease-in-out;
+}
+
+.menu-aside {
+    width: 50%;
+    height: 100vh;
+    background-image: radial-gradient(circle farthest-corner at 100% 0,#acffac 28%,#5cf8bc 51%,var(--primary-color) 87%,var(--primary-color) 96%);
+    animation: intro-gradient 3s infinite ease;
+    background-size: 200% 200%;
+}
+
+.menu.active {
+    display: flex;
+    justify-content: space-between;
+    opacity: 100%;
+    transition: opacity .8s ease-in;
+}
+
+.menu-close {
+    display: none;
+}
+
+.menu-close.active {
+    display: flex;
+    justify-content: space-between;
+    opacity: 100%;
+    transition: opacity .8s ease-in;
+    position: absolute;
+    top: 35px;
+    right: 25px;
+    font-size: 32px;
+    cursor: pointer;
+    color: var(--fourth-color);
+    z-index: 997;
+}
+
+.social-media a i {
+    font-size: 32px;
+    margin: 25px;
+    color: var(--secondy-color);
+}
+
+.social-media a i:hover {
+    color: var(--primary-color);
+}
+
+@media (max-width: 768px) {
+    .menu-close.active {
+        color: var(--secondy-color);
+    }
+
+    .menu ul {
+        width: 100%;
+    }
+
+    .menu-aside {
+        display: none;
+    }
+}
+
+@media (max-width: 465px) {
+    .menu ul li a {
+        font-size: 32px;
+    }
+}
+
+@keyframes intro-gradient {
+    0% {
+        background-position: 0% 1%;
+    }
+    
+    50% {
+        background-position: 100% 97%;
+    }
+    100% {
+        background-position: 0% 4%;
+    }
+}
