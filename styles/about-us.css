@@ -106,3 +106,37 @@ body {
     align-items: center;
     padding: 15px;
 }
+
+@media (max-width: 768px) {
+    .races {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .about-content {
+        padding: 10px;
+        flex-direction: column;
+        width: 100%;
+    }
+    
+    .fercho {
+        width: 50%;
+        margin-bottom: 20px;
+    }
+
+    .card {
+        flex-direction: column;
+    }
+
+    .card p {
+        padding: 20px;
+    }
+
+    .races .about-content img {
+        margin: 0 auto;
+    }
+
+    .padding-top {
+        padding-top: 10px;
+    }
+ }
