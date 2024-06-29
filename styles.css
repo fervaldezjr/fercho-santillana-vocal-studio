@@ -1,0 +1,158 @@
+/* Variables CSS */
+:root {
+    --primary-color: #007bff;
+    --secondary-color: #0056b3;
+    --background-color: #010213;
+    --text-color: #f2f2f2;
+    --text-secondary-color: #b9b9b9;
+    --font-family: 'Arial', sans-serif;
+    --padding: 2rem;
+    --padding-small: 1rem;
+    --border-radius: 10px;
+    --box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    --transition: all 0.3s ease-in-out;
+    --animation-duration: 1s;
+    --title-font-size: 3rem;
+    --title-font-size-small: 1.5rem;
+    --description-font-size: 1.5rem;
+    --description-font-size-small: 1rem;
+    --button-padding: 1rem 2rem;
+    --button-font-size: 1.25rem;
+    --button-font-size-small: 1rem;
+    --max-width: 1200px;
+}
+
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos del héroe */
+body, html {
+    height: 100%;
+    font-family: var(--font-family);
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: var(--padding);
+    height: 100vh;
+    transition: var(--transition);
+    overflow: hidden;
+    max-width: var(--max-width);
+    margin: 0 auto;
+}
+
+.hero-content {
+    max-width: 50%;
+    padding-right: 1rem;
+    animation: fadeInLeft var(--animation-duration) ease-in-out;
+}
+
+.hero-title {
+    font-size: var(--title-font-size);
+    margin-bottom: 1rem;
+    color: var(--text-color);
+}
+
+.hero-description {
+    font-size: var(--description-font-size);
+    margin-bottom: 2rem;
+    color: var(--text-secondary-color);
+}
+
+.hero-button {
+    padding: var(--button-padding);
+    font-size: var(--button-font-size);
+    color: #fff;
+    background-color: var(--primary-color);
+    border: none;
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.hero-button:hover {
+    background-color: var(--secondary-color);
+}
+
+.hero-image {
+    position: relative;
+    width: 50%;
+    height: 100%;
+}
+
+.hero-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    animation: fadeInRight var(--animation-duration) ease-in-out;
+    mask-image: linear-gradient(to bottom, black 5%, transparent 95%);
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+}
+
+/* Animaciones */
+@keyframes fadeInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeInRight {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column-reverse;
+        text-align: center;
+        padding: var(--padding-small);
+    }
+
+    .hero-content {
+        max-width: 100%;
+        margin-bottom: 2rem;
+    }
+
+    .hero-title {
+        font-size: var(--title-font-size-small);
+    }
+
+    .hero-description {
+        font-size: var(--description-font-size-small);
+    }
+
+    .hero-button {
+        font-size: var(--button-font-size-small);
+    }
+
+    .hero-image {
+        width: 100%;
+        height: auto;
+    }
+
+    .hero-image img {
+        width: 100%;
+        height: auto;
+        transform: translateY(35%);
+        mask-image: linear-gradient(to bottom, black 10%, transparent 90%);
+    }
+}

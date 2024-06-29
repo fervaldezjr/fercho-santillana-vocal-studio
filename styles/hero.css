@@ -5,72 +5,16 @@
     --fourth-color: #010213;
 }
 
-.hero {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.hero-content {
-    max-width: 60%;
-    padding: 50px;
-}
-
-.hero-content h1 {
-    font-size: 4rem;
-    margin: 0;
-    color: var(--secondy-color);
-    font-family: 'Rubik';
-}
-
-.hero-content p {
-    font-size: 28px;
-    font-weight: 300;
-    margin: 20px 0;
-    color: var(--secondy-color);
-    font-family: 'Rubik';
-    line-height: 1.5;
-}
-
-.services {
-    display: flex;
-    flex-wrap: wrap;
-    margin: 20px 0;
-    font-family: 'Rubik';
-}
-
-.services p {
-    margin: 5px;
-    font-size: 18px;
-    font-weight: bold;
-    color: #242323;
-    background-color: var(--primary-color);
-    padding: 8px;
-    border-radius: 6px;
-    opacity: .7;
-}
-
-.services p i {
-    margin-right: 5px;
-}
-
-.buttons {
-    margin-top: 30px;
-}
-
 .button {
     font-family: 'Rubik';
-    text-transform: uppercase;
     display: inline-block;
-    padding: 20px;
     font-weight: 600;
     font-size: 20px;
     color: var(--fourth-color);
     text-decoration: none;
-    margin-right: 20px;
     border-radius: 5px;
     transition: color .3s ease-in-out, box-shadow .5s ease-in-out;
-    padding: 20px;
+    padding: 15px;
     background-color: var(--primary-color);
     background-size: 200% 100%;
     background-image: linear-gradient(to right, white 50%, transparent 50%);
@@ -91,73 +35,8 @@
     transition: color 0.3s ease;
 }
 
-.hero-image img {
-    width: 100%;
-    height: 100vh;
-    object-fit: cover;
-}
-
-
-@media (max-width: 1024px) {
-    .hero {
-        margin-top: 100px;
-        flex-direction: column-reverse;
-    }
-
-    .hero-content {
-        padding: 3em 0;
-    }
-
-    .hero-content h1 {
-        font-size: 1.5rem;
-    }
-
-    .hero-content p,
-    .hero-content a {
-        font-size: 1rem;
-    }
-
-    .hero-image img {
-        width: 570px;
-        height: 500px;
-    }
-}
-
 @media (max-width: 768px) {
-    .hero-content {
-        padding: 2em 0;
+    .button {
+        font-size: 10px;
     }
-
-    .hero-image img {
-        width: 300px;
-        height: 450px;
-    }
-
-    .hero-content a {
-        font-size: .8rem;
-    }
-}
-
-@media (max-width: 465px) {
-    .menu ul li a {
-        font-size: 32px;
-    }
-
-    .hero-content a {
-        font-size: .5rem;
-    }
-}
-
-@keyframes intro-gradient {
-    0% {
-        background-position: 0% 1%;
-    }
-
-    50% {
-        background-position: 100% 97%;
-    }
-
-    100% {
-        background-position: 0% 4%;
-    }
-}
+ }

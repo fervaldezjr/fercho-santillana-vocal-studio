@@ -8,10 +8,6 @@
     --fourth-color: #010213;
 }
 
-body {
-    background-image: linear-gradient(to right top, #191922, #171821, #151720, #13151e, #11141d, #161b23, #1b2128, #20282e, #30393d, #414a4c, #545c5c, #686e6d);
-}
-
 h2 {
     color: var(--primary-color);
     font-family: 'Rubik';

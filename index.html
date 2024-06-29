@@ -1,16 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Responsive Menu</title>
-    <link rel="stylesheet" href="./styles/general.css">
-    <link rel="stylesheet" href="./styles/reset.css">
-    <link rel="stylesheet" href="./styles/horizontal-scroll.css">
+    <title>Fercho Santillana Vocal Studio</title>
+    <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="./styles/menu.css">
-    <link rel="stylesheet" href="./styles/hero.css">
+    <link rel="stylesheet" href="./styles/general.css">
     <link rel="stylesheet" href="./styles/about-us.css">
+    <link rel="stylesheet" href="./styles/schedule.css">
+    <link rel="stylesheet" href="./styles/hero.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
         integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -21,17 +21,17 @@
 
 <body>
     <header>
-        <div class="logo"><a href="#"><img src="./assets/ferchosantillanastudio.png" alt=""></a></div>
+        <div class="logo"><a href="#">FSVS</a></div>
         <div class="menu-icon" id="menu-icon">&#9776;</div>
     </header>
     <nav id="menu" class="menu">
         <ul>
             <p class="menu-close" id="menu-close"><i class="fa-solid fa-xmark"></i></p>
-            <li><a href="#home">Inicio</a></li>
-            <li><a href="#about-us">Sobre Mi</a></li>
-            <li><a href="#schedule">Agenda</a></li>
-            <li><a href="#testimonials">Blog</a></li>
-            <li><a href="#contact">Contacto</a></li>
+            <li><a href="#home" class="link-close">Inicio</a></li>
+            <li><a href="#about-me" class="link-close">Sobre Mi</a></li>
+            <li><a href="#schedule" class="link-close">Agenda</a></li>
+            <li><a href="#testimonials" class="link-close">Blog</a></li>
+            <li><a href="#contact" class="link-close">Contacto</a></li>
             <div class="social-media">
                 <a href="https://www.linkedin.com/in/fercho-santillana-b420361a5/?originalSubdomain=es"
                     target="_blank"><i class="fa-brands fa-linkedin"></i></a>
@@ -48,11 +48,11 @@
 
     <section class="hero">
         <div class="hero-content">
-            <h2>Fercho Santillana</h2>
-            <h1>Profesor Vocal Certificado <br>en Barcelona</h1>
-            <p>Si buscas una <strong>experiencia de aprendizaje significativa</strong>, ¡estás en el lugar correcto!</p>
-            <p>Te guiaré paso a paso en un Diagnóstico Vocal Personalizado. Ya seas un cantante amateur o profesional,
-                <strong>juntos crearemos un Plan</strong> para elevar tu voz y perfeccionar tu técnica vocal.
+            <h1 class="hero-title">Profesor Vocal Certificado en Barcelona</h1>
+            <p class="hero-description">Si buscas una experiencia de aprendizaje significativa, ¡estás en el lugar
+                correcto!
+                Te guiaré paso a paso en un diagnóstico vocal personalizado. Ya seas un cantante amateur o profesional,
+                juntos crearemos un plan para elevar tu voz y perfeccionar tu técnica vocal.
             </p>
             <div class="buttons">
                 <a href="https://eholo.health/es/centros/elnucleo/fernandosantillana85" target="_blank"
@@ -60,43 +60,126 @@
             </div>
         </div>
         <div class="hero-image">
-            <img src="./assets/IMG_1802.jpeg" alt="Voice over artist">
+            <img src="./assets/IMG_1802.jpeg" alt="Fercho Santillana en su estudio de voz">
         </div>
     </section>
 
-    <section class="about-us" id="about-us">
-        <h2>·Sobre Mi ·</h2>
-        <p>Soy <strong>Fercho Santillana</strong>, y quiero compartir mi historia contigo.</p>
+    <section class="about-me" id="about-me">
+        <h2>Conocé Mi Historia</h2>
+        <div class="racesWrapper">
+            <div class="races">
+                <section class="about-content">
+                    <img class="mask-img" src="./assets/IMG_5791-fotor-2023110519321.jpeg"
+                        alt="Fercho Santillana en concierto" width="400px">
+                    <div>
+                        <p>Comencé mi viaje como actor de teatro musical, sumergiéndome en la interpretación y la
+                            música. A
+                            lo largo de los años, me formé con maestros de canto y actuación, lo que me llevó a un
+                            emocionante viaje en el mundo del teatro.</p>
+                        <br>
+                        <p>Pero mi pasión no se detuvo ahí. Durante más de 12 años, me dediqué a la enseñanza del canto
+                            en diversas ciudades, escuelas y Universidades, desde Puebla, Ciudad de México hasta Playa
+                            del
+                            Carmen y actualmente, Barcelona.</p>
+                        <br>
+                        <p>En 2019, obtuve la certificación del Institute for Vocal Advancement, una organización de
+                            renombre internacional. Desde entonces, hemos estado trabajando en investigaciones y
+                            desarrollo
+                            continuo de la técnica vocal, lo que ha sido fundamental en mi proceso docente.</p>
+                        <br>
+                        <p>Mi metodología se centra en entrenar voces de manera libre y balanceada, desde la base hasta
+                            el final del rango, sin interrupciones ni cambios abruptos de calidad vocal. Ayudo a mis
+                            estudiantes a descubrir Y HAGAN CONSIENTES las sensaciones de una voz en equilibrio, sin
+                            recurrir a indicaciones obsoletas.</p>
+                    </div>
+                </section>
 
-        <p> Comencé mi viaje como actor de teatro musical, sumergiéndome en la interpretación y la música. A lo largo de
-            los años, me formé con maestros de canto y actuación, lo que me llevó a un emocionante viaje en el mundo del
-            teatro.</p>
-
-        <p> Pero mi pasión no se detuvo ahí. Durante más de 12 años, me dediqué a la enseñanza del canto en diversas
-            ciudades, escuelas y Universidades, desde Puebla, Ciudad de México hasta Playa del Carmen y actualmente,
-            Barcelona.</p>
-
-        <p> En 2019, obtuve la certificación del Institute for Vocal Advancement, una organización de renombre
-            internacional. Desde entonces, hemos estado trabajando en investigaciones y desarrollo continuo de la
-            técnica vocal, lo que ha sido fundamental en mi proceso docente.</p>
-
-        <p> Mi metodología se centra en entrenar voces de manera libre y balanceada, desde la base hasta el final del
-            rango, sin interrupciones ni cambios abruptos de calidad vocal. Ayudo a mis estudiantes a descubrir Y HAGAN
-            CONSCIENTES las sensaciones de una voz en equilibrio, sin recurrir a indicaciones obsoletas.</p>
-
-        <p> La práctica vocal no es solo un arte, sino una terapia en sí misma. Si te apasiona el canto, o si buscas una
-            experiencia de aprendizaje significativa, ¡estás en el lugar correcto!</p>
-
-        <p> Transforma tu Voz con técnicas probadas. Clases online y presenciales | Clases en portugués, castellano o
-            inglés.</p>
-
+                <section class="about-content">
+                    <div class="about-content-card">
+                        <div class="card">
+                            <a href="https://www.vocaladvancement.com/en-us/find-a-teacher/profile/522"
+                                target="_blank"><img src="./assets/63c885c7fb8105f8aa8b6488_instructor1_large-p-500.jpg"
+                                    alt="Certificado IVA" height="250px"></a>
+                            <p>Te guiaré paso a paso en un Diagnóstico Vocal Inicial Personalizado.
+                                Además de mis acreditaciones profesionales, podrás elegír en que idioma serán tus
+                                clases,
+                                que podrán ser en 🇪🇸 Español, 🇵🇹 Portugues o 🇬🇧 Inglés.</p>
+                        </div>
+                    </div>
+                </section>
+            </div>
     </section>
 
-    <section class="schedule" style="height: 100vh;">
-        
+    <section class="schedule" id="schedule">
+        <h2>Agenda Tú Próxima Clase</h2>
+        <div class="ag-format-container">
+            <div class="ag-courses_box">
+
+                <div class="ag-courses_item">
+                    <a href="#" class="ag-courses-item_link">
+                        <div class="ag-courses-item_bg"></div>
+
+                        <div class="ag-courses-item_title">
+                            Clase Individual <br>
+                            55 minutos
+                        </div>
+
+                        <div class="ag-courses-item_date-box">
+                            <span class="ag-courses-item_date">
+                                55,00€
+                            </span>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="ag-courses_item">
+                    <a href="#" class="ag-courses-item_link">
+                        <div class="ag-courses-item_bg"></div>
+
+                        <div class="ag-courses-item_title">
+                            Diagnostico Vocal <br>
+                            20 minutos
+                        </div>
+
+                        <div class="ag-courses-item_date-box">
+                            <span class="ag-courses-item_date">
+                                25,00€
+                            </span>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="ag-courses_item">
+                    <a href="#" class="ag-courses-item_link">
+                        <div class="ag-courses-item_bg"></div>
+
+                        <div class="ag-courses-item_title">
+                            Pack Mensual <br>
+                            55 minutos <br>
+                            Bono de 4 sesiones
+                        </div>
+
+                        <div class="ag-courses-item_date-box">
+                            <span class="ag-courses-item_date">
+                                200,00€
+                            </span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    </div>
+    </div>
+    </section>
+
+    <section class="about-me" id="about-me">
+        <h2>Contactame</h2>
+
     </section>
 
     <script src="./js/menu-component.js"></script>
+    <script src="./js/gsap.js"></script>
 </body>
 
 </html>
