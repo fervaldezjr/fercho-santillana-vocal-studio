@@ -1,0 +1,43 @@
+:root {
+    --primary-color: #02FF67;
+    --secondy-color: #ececec;    --text-secondary-color: #b9b9b9;
+
+    --third-color: #1C1B33;
+    --fourth-color: #010213;
+}
+
+.testimonials {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.testimonials h3 {
+    font-size: 1.5rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: #02FF67;
+}
+
+.testimonials-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    padding-left: 20px;
+}
+
+.flags {
+    display: flex;
+}
+
+.flags svg {
+    padding: 0 20px;
+}
+
+.flags p {
+    color: #b9b9b9;
+    font-size: 1.5rem;
+    text-align: center;
+}

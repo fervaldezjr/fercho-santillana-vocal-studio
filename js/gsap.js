@@ -1,7 +1,7 @@
 // master GSAP and ScrollTrigger
 // https://www.creativeCodingClub.com
 // Unlock over 250 video lessons
-
+if (window.innerWidth > 768) {
 const races = document.querySelector(".races");
 console.log(races.offsetWidth)
 
@@ -27,3 +27,4 @@ ScrollTrigger.create({
 	invalidateOnRefresh:true,
 	markers:false
 })
+};

@@ -19,6 +19,7 @@
     background-size: 200% 100%;
     background-image: linear-gradient(to right, white 50%, transparent 50%);
     background-position: 100% 0;
+    z-index: 999999;
 }
 
 .button:hover {
