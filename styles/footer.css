@@ -1,0 +1,41 @@
+:root {
+    --primary-color: #02FF67;
+    --secondy-color: #ddd9d9;
+}
+
+footer {
+    background-color: #121212;
+    padding: 50px 100px;
+}
+
+.footer-container {
+    display: flex;
+    max-width: 1200px;
+}
+
+footer img {
+    width: 150px;
+    margin-bottom: 20px;
+    margin-left: 15px;
+}
+
+footer div a {
+    font-size: 1.3em;
+    margin-left: 15px;
+    color: var(--secondy-color);
+}
+
+footer div a:hover {
+    color: var(--primary-color);
+}
+
+.brand-logo {
+    display: flex;
+    flex-direction: column;
+}
+
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+    }
+ }

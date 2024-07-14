@@ -8,6 +8,10 @@
     --fourth-color: #010213;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 h2 {
     color: var(--primary-color);
     font-family: 'Rubik';

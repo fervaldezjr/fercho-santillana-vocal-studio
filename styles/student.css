@@ -1,0 +1,32 @@
+.student-content img {
+    height: 100px;
+    width: 100px;
+    object-fit: cover;
+    border-radius: 100%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+.student-card {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.star-content {
+    margin-left: 20px;
+}
+
+.star-content i {
+    color: #02FF67;
+}
+
+.student-name {
+    margin: 10px 0;
+    font-weight: bold;
+    color: #02FF67 !important;
+}
+
+@media (max-width: 768px) {
+    
+ }
