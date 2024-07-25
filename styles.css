@@ -4,7 +4,7 @@
     --secondary-color: #0056b3;
     --background-color: #010213;
     --text-color: #f2f2f2;
-    --text-secondary-color: #b9b9b9;
+    --text-secondary-color: #fffefe;
     --font-family: 'Arial', sans-serif;
     --padding: 2rem;
     --padding-small: 1rem;
@@ -12,7 +12,7 @@
     --box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     --transition: all 0.3s ease-in-out;
     --animation-duration: 1s;
-    --title-font-size: 3rem;
+    --title-font-size: 43em;
     --title-font-size-small: 1.5rem;
     --description-font-size: 1.1rem;
     --description-font-size-small: 1rem;
@@ -38,37 +38,41 @@ body, html {
 .hero {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     padding: var(--padding);
     height: 100vh;
     transition: var(--transition);
     overflow: hidden;
-    max-width: var(--max-width);
     margin: 0 auto;
+    background: url('./assets/pixelcut-export\ \(2\).webp') no-repeat bottom;
+    background-size: cover;
+
 }
 
 .hero-content {
-    max-width: 50%;
-    padding-right: 1rem;
+    max-width: 60%;
     animation: fadeInLeft var(--animation-duration) ease-in-out;
 }
 
 .hero-title {
-    font-size: var(--title-font-size);
+    font-size: 50px;
     margin-bottom: 1rem;
-    color: var(--text-color);
+    color: #03d758;
+    text-transform: uppercase;
+    font-weight: 900;
 }
 
 .hero-description {
-    font-size: 1.2em;
+    font-size: 1.4em;
     margin-bottom: 2rem;
     color: var(--text-secondary-color);
-    line-height: 1.3;
+    line-height: 1.2;
+    font-weight: 600;
 }
 
 .hero-button {
     padding: var(--button-padding);
-    font-size: var(--button-font-size);
+    font-size: 35px;
     color: #fff;
     background-color: var(--primary-color);
     border: none;

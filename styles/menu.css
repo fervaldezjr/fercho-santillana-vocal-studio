@@ -25,6 +25,7 @@ header .logo a {
 }
 
 .menu-icon {
+    display: none;
     font-size: 32px;
     cursor: pointer;
     color: var(--secondy-color);
@@ -47,6 +48,14 @@ header .logo a {
     opacity: 0;
     background-color: var(--fourth-color);
     z-index: 998;
+}
+
+.menu-desktop {
+    display: flex;
+    font-size: 24px;
+}
+.menu-desktop li {
+    margin: 0 15px;
 }
 
 .menu ul {
@@ -124,6 +133,14 @@ header .logo a {
 }
 
 @media (max-width: 768px) {
+    .menu-desktop {
+        display: none;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+
     .menu-close.active {
         color: var(--secondy-color);
     }
