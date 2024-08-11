@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fercho Santillana Vocal Studio</title>
+    <!-- blog styles -->
+    <link rel="stylesheet" href="./blog.css">
+    <!-- end -->
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="../styles/menu.css">
+    <link rel="stylesheet" href="../styles/general.css">
+    <link rel="stylesheet" href="../styles/about-us.css">
+    <link rel="stylesheet" href="../styles/schedule.css">
+    <link rel="stylesheet" href="../styles/testimonials.css">
+    <link rel="stylesheet" href="../styles/hero.css">
+    <link rel="stylesheet" href="../styles/contact.css">
+    <link rel="stylesheet" href="../styles/footer.css">
+    <link rel="stylesheet" href="../styles/student.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://kit.fontawesome.com/77408c3814.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <div class="logo"><a href="#"> <img src="../assets/image.png" alt="" width="160px">
+            </a></div>
+        <ul class="menu-desktop">
+            <li><a href="../index.html#" class="link-close">Inicio</a></li>
+            <li><a href="../index.html#about-me">Sobre Mi</a></li>
+            <li><a href="../index.html#schedule">Agenda</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="../index.html#contact">Contacto</a></li>
+            <li><a class="book-bottom" href="https://eholo.health/es/centros/elnucleo/fernandosantillana85">Reserva tu clase</a></li>
+        </ul>
+        <div class="menu-icon" id="menu-icon">&#9776;</div>
+    </header>
+    <nav id="menu" class="menu">
+        <ul>
+            <p class="menu-close" id="menu-close"><i class="fa-solid fa-xmark"></i></p>
+            <li><a href="../index.html#" class="link-close">Inicio</a></li>
+            <li><a href="../index.html#about-me">Sobre Mi</a></li>
+            <li><a href="../index.html#schedule">Agenda</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="../index.html#contact">Contacto</a></li>
+            <div class="social-media">
+                <a href="https://www.linkedin.com/in/fercho-santillana-b420361a5/?originalSubdomain=es"
+                    target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://www.instagram.com/ferchosantillanavocalstudio/" target="_blank"><i
+                        class="fa-brands fa-instagram"></i></a>
+                <a href="https://api.whatsapp.com/send?phone=34658267038&text=Hola%2C%20me%20gustar%C3%ADa%20agendar%20una%20clase!%F0%9F%99%83"
+                    target="_blank"><i class="fa-brands fa-square-whatsapp"></i></a>
+                <a href="mailto:ferchosantillana@gmail.com" target="_blank"><i class="fa-solid fa-envelope"></i></a>
+            </div>
+        </ul>
+        <div class="menu-aside">
+        </div>
+    </nav>
+    
+    <main>
+        <h2>Noticias y Articulos</h2>
+        <h3>El blog de Fercho Santillana</h3>
+
+        <div id="blog-container"></div>
+
+        <script>
+            // Suponiendo que el archivo JSON está en la misma ruta que tu HTML y se llama "blog.json"
+            fetch('blog.json')
+                .then(response => response.json())
+                .then(data => {
+                    const blogContainer = document.getElementById('blog-container');
+                    data.forEach(post => {
+                        const postElement = document.createElement('div');
+                        postElement.className = 'blog-post';
+                        postElement.innerHTML = `
+                            <a href="#">
+                                <h4>${post.title}</h4>
+                                <img src="${post.image}" alt="${post.title}">
+                                <p class="blog-author">Publicado el ${post.date} por ${post.author}</p>
+                                <p class="blog-content">${post.content}</p>
+                            </a>
+                        `;
+                        blogContainer.appendChild(postElement);
+                    });
+                })
+                .catch(error => console.error('Error al cargar los datos del blog:', error));
+        </script>
+    </main>
+
+</body>
+</html>

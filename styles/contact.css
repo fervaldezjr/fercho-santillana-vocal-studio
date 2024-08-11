@@ -6,18 +6,22 @@
 }
 
 .contact h2 {
+    padding: 0 2rem;
     padding-bottom: 20px;
+    font-size: 2em;
+    color: #1C1B33;
 }
 
 .contact .contact-content {
     display: flex;
-    background-color: #121212;
+    justify-content: center;
     padding: 50px;
     border-radius: 15px;
+    font-family: 'Rubik';
 }
 
 .contact .contact-content h3 {
-    color: var(--primary-color);
+    color: #1C1B33;
     font-size: 1.3em;
     padding: 1px 0px 00px 20px;
 }
@@ -30,14 +34,14 @@
 }
 
 .contact-links a {
-    color: var(--text-secondary-color);
+    color: #5e5aa8;
     text-decoration: none;
     font-size: 1.3em;
     padding: 0px 5px 10px 20px;
 }
 
 .contact-links a:hover {
-    color: var(--text-color);
+    color: #1C1B33;
 }
 
 @media (max-width: 768px) {

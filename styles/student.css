@@ -1,3 +1,16 @@
+.student-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.student h2 {
+    padding: 0 2rem;
+    font-size: 2em;
+    color: #1C1B33;
+}
+
 .student-content img {
     height: 100px;
     width: 100px;
@@ -8,13 +21,25 @@
 }
 
 .student-card {
+    font-family: 'Rubik';
     display: flex;
     flex-direction: column;
     text-align: center;
+    margin: 10px;
 }
 
 .star-content {
     margin-left: 20px;
+    padding-bottom: 10px;
+}
+
+.student-description {
+    color: rgb(105, 105, 105) !important;
+    font-size: 18px;
+    width: 450px;
+    text-align: center;
+    line-height: 1.5;
+    padding: 1em 0;
 }
 
 .star-content i {
@@ -28,5 +53,7 @@
 }
 
 @media (max-width: 768px) {
-    
+    .student-content {
+        flex-direction: column  ;
+    }
  }

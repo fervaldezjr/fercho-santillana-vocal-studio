@@ -26,18 +26,19 @@
 
 body {
 	margin:0;
-	background:#15151e;
 	overflow-x:hidden;
 }
 
 .about-me {
-    margin: 0 auto;
     max-width: 1200px;
+    background-color: #02FF67;
 }
 
 .about-me h2 {
-    padding: 0 var(--padding);
-    font-size:3vw;
+    padding: 0 2rem;
+    font-size: 2em;
+    color: #1C1B33;
+    padding-top: 1em;
 }
 
 .races {
@@ -83,8 +84,14 @@ body {
 
 .about-content {
     display: flex;
+    flex-direction: column;
     align-items: center;
     padding: var(--padding);
+    font-family: 'Rubik';
+}
+
+.about-content img {
+    margin-bottom: 2em;
 }
 
 .about-content .mask-img {
@@ -92,10 +99,10 @@ body {
 }
 
 .about-content p {
-    color: var(--text-secondary-color);
     margin-left: 20px;
     font-size: 1.1rem;
     line-height: 1.3;
+    color: #1C1B33;
 }
 
 .about-content-card {

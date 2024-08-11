@@ -1,8 +1,12 @@
 .schedule h2 {
   padding: 0 var(--padding);
-  font-size:3vw;
+  font-size:1em;
   max-width: 1200px;
   margin: 0 auto;
+}
+
+.schedule {
+  margin-top: 6em;
 }
 
 .ag-format-container {
@@ -61,7 +65,7 @@
   margin: 0 0 25px;
 
   overflow: hidden;
-
+  font-family: 'Rubik';
   font-weight: bold;
   font-size: 30px;
   color: #FFF;
@@ -81,7 +85,7 @@
 .ag-courses-item_date {
   font-weight: bold;
   color: #3ecd5e;
-
+  font-family: 'Rubik';
   -webkit-transition: color .5s ease;
   -o-transition: color .5s ease;
   transition: color .5s ease
